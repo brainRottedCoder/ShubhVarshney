@@ -8,10 +8,16 @@ const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:4173', "http://localhost:8080", "https://shubh-varshney.vercel.app/",
-        ""
+    origin: [
+        'http://localhost:5173',
+        'http://localhost:4173',
+        'http://localhost:8080',
+        'https://shubh-varshney.vercel.app',
+        'https://shubhvarshney.netlify.app'
     ],
-    credentials: true
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.json());
 
