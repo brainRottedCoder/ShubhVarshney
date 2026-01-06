@@ -41,22 +41,55 @@ router.get('/:username', async (req, res) => {
         // Use alfa-leetcode-api (free, public API)
         const baseUrl = 'https://alfa-leetcode-api.onrender.com';
 
-        // Fetch user profile, solved stats, contest data, and calendar
-        const [profileRes, solvedRes, contestRes, calendarRes] = await Promise.all([
-            fetch(`${baseUrl}/${username}`),
-            fetch(`${baseUrl}/${username}/solved`),
-            fetch(`${baseUrl}/${username}/contest`),
-            fetch(`${baseUrl}/${username}/calendar`)
+        console.log(`Fetching LeetCode data for: ${username}`);
+
+        // Fetch user profile, solved stats, contest data, and calendar with timeout
+        const fetchWithTimeout = async (url: string, timeout = 10000) => {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), timeout);
+
+            try {
+                const response = await fetch(url, { signal: controller.signal });
+                clearTimeout(timeoutId);
+                return response;
+            } catch (error) {
+                clearTimeout(timeoutId);
+                throw error;
+            }
+        };
+
+        const [profileRes, solvedRes, contestRes, calendarRes] = await Promise.allSettled([
+            fetchWithTimeout(`${baseUrl}/${username}`),
+            fetchWithTimeout(`${baseUrl}/${username}/solved`),
+            fetchWithTimeout(`${baseUrl}/${username}/contest`),
+            fetchWithTimeout(`${baseUrl}/${username}/calendar`)
         ]);
 
-        if (!profileRes.ok) {
-            throw new Error(`LeetCode user not found: ${username}`);
+        // Check if profile request succeeded
+        if (profileRes.status === 'rejected' || (profileRes.status === 'fulfilled' && !profileRes.value.ok)) {
+            const errorMsg = profileRes.status === 'rejected'
+                ? profileRes.reason?.message
+                : `HTTP ${profileRes.value.status}`;
+            console.error(`LeetCode profile fetch failed for ${username}:`, errorMsg);
+            throw new Error(`LeetCode user not found or API unavailable: ${username}`);
         }
 
-        const profile = await profileRes.json();
-        const solved = await solvedRes.json();
-        const contest = await contestRes.json();
-        const calendarData = await calendarRes.json();
+        // Parse responses with error handling
+        const profile = profileRes.status === 'fulfilled' ? await profileRes.value.json() : {};
+
+        const solved = solvedRes.status === 'fulfilled' && solvedRes.value.ok
+            ? await solvedRes.value.json()
+            : {};
+
+        const contest = contestRes.status === 'fulfilled' && contestRes.value.ok
+            ? await contestRes.value.json()
+            : {};
+
+        const calendarData = calendarRes.status === 'fulfilled' && calendarRes.value.ok
+            ? await calendarRes.value.json()
+            : {};
+
+        console.log(`LeetCode data fetched successfully for ${username}`);
 
         // Calculate total active days from submission calendar
         const submissionCalendar = calendarData?.submissionCalendar || profile?.submissionCalendar || null;
@@ -104,7 +137,8 @@ router.get('/:username', async (req, res) => {
         console.error('LeetCode API error:', error);
         res.status(500).json({
             error: 'Failed to fetch LeetCode data',
-            message: error instanceof Error ? error.message : 'Unknown error'
+            message: error instanceof Error ? error.message : 'Unknown error',
+            username: username
         });
     }
 });

@@ -11,38 +11,45 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'Real-time Collaboration Tool',
-    description: 'A multiplayer whiteboard with WebSocket sync, drawing tools, and live cursors. Built for seamless team collaboration.',
-    tags: ['React', 'Socket.io', 'Canvas', 'Node.js'],
-    github: '#',
-    link: '#',
+    title: 'Resume Builder & ATS analyser',
+    description: 'A modern, feature-rich portfolio and resume builder application that helps developers create professional portfolios with ease. Built with Next.js, React, and shadcn/ui for a seamless user experience.',
+    tags: ['React', 'Next.js', 'GenAI', 'Firebase', 'Tailwind CSS', 'NextAuth.js'],
+    github: 'https://github.com/shubhvars/resumify/',
+    link: 'https://resumify-rho-six.vercel.app/',
   },
   {
-    title: 'Algorithm Visualizer',
-    description: 'Interactive visualization of sorting and pathfinding algorithms with step controls and complexity analysis.',
-    tags: ['TypeScript', 'D3.js', 'Algorithms', 'React'],
-    github: '#',
-    link: '#',
+    title: 'Voltway ERP - AI-Native Operations Platform',
+    description: 'Voltway ERP is a next-generation enterprise resource planning system specifically designed for electric scooter manufacturing operations. Unlike traditional ERPs, Voltway integrates artificial intelligence at its core through Hugo AI, an intelligent copilot that automates procurement workflows, analyzes operational data, and enables natural language interactions with your entire operations database.',
+    tags: ['Next.js 16.1', 'React 19', 'TypeScript 5', 'Tailwind CSS', 'LangChain', 'Firebase', 'HuggingFace', ''],
+    github: 'https://github.com/brainRottedCoder/Amulate-vedant-shubh',
+    link: 'https://amulate-vedant-shubh.vercel.app',
   },
   {
-    title: 'CLI Task Manager',
-    description: 'A terminal-based productivity app with natural language parsing, recurring tasks, and cloud sync.',
-    tags: ['Node.js', 'SQLite', 'CLI', 'TypeScript'],
-    github: '#',
+    title: 'DreamGlobe',
+    description: `Dream Globe is not just a travel app — it's an emotional voyage through consciousness. We've built an immersive, surreal experience where users don't browse destinations, they dream them into existence.`,
+    tags: ['Framer.js', 'React', 'TypeScript', 'Tailwind CSS', 'Three.js', 'Shadcn UI', 'Figma'],
+    github: 'https://github.com/brainRottedCoder/DreamGlobe-dreamwareHackathon',
+    link: 'https://dreamglobe.life/',
   },
   {
-    title: 'Design System',
-    description: 'A comprehensive component library built for consistency, accessibility, and exceptional developer experience.',
-    tags: ['React', 'Storybook', 'CSS', 'Figma'],
-    github: '#',
-    link: '#',
+    title: 'Santaviour',
+    description: `Santa's Rescue is an action-packed 2D platformer built with the Turbo Genesis SDK and Rust. Play as Santa on a mission to rescue kidnapped children and defeat the Evil Santa in an epic boss battle to save Christmas!`,
+    tags: ['Rust', 'Turbo Genesis SDK', 'Canva', 'Figma',],
+    github: 'https://github.com/brainRottedCoder/Santaviour',
+    link: 'https://santaviour.vercel.app',
   },
+  {
+    title: 'QuantAI',
+    description: 'A modern, AI-powered financial platform that helps users manage their personal finances, track investments, and gain valuable financial insights through intelligent automation and machine learning.',
+    tags: ['Next.js 16.1', 'React 19', 'Supabase', 'Tailwind css', 'Clerk', 'Shadcn UI', 'Tailwind CSS'],
+    github: 'https://github.com/brainRottedCoder/QuantAI',
+    link: 'https://quant-ai-olive.vercel.app/',
+  },
+
 ];
 
 const skills = [
-  'TypeScript', 'React', 'Next.js', 'Node.js', 'Python',
-  'PostgreSQL', 'Redis', 'Docker', 'AWS', 'System Design',
-  'Data Structures', 'Algorithms',
+  'Java', 'Javascript', 'Python', 'Express. js', 'Git', 'GitHub', 'Next.js', 'MongoDB', 'Node.js', 'PostgreSQL', 'Postman', 'Prisma ORM', 'RESTful APIs', 'GSAP', 'Next. js', 'React. js', 'Tailwind CSS',
 ];
 
 const Index = () => {
@@ -91,7 +98,7 @@ const Index = () => {
                   </p>
                   <p>
                     When I'm not coding, you'll find me exploring new technologies,
-                    contributing to open source, or deep in a LeetCode session.
+                    reading books, or playing video games.
                   </p>
                 </div>
               </motion.div>
