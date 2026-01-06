@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 
-const API_BASE = 'http://localhost:3001/api';
+const API_BASE = 'https://shubh-varshney-backend.vercel.app/api';
 
 export interface LeetCodeStats {
     username: string;
