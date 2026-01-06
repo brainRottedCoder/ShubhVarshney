@@ -13,41 +13,40 @@ interface Experience {
 
 const experiences: Experience[] = [
     {
-        title: 'Software Engineer',
-        company: 'Tech Company',
-        companyUrl: '#',
+        title: 'SDE Intern',
+        company: 'Temflo',
+        companyUrl: 'https://temflo.co.in/',
         location: 'Remote',
-        period: 'Jan 2024 - Present',
+        period: 'Jan 2026 - Present',
         description: [
             'Developed and maintained scalable web applications using React and Node.js',
             'Collaborated with cross-functional teams to deliver high-quality features',
             'Implemented performance optimizations resulting in 40% faster load times',
         ],
-        technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
+        technologies: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'AWS'],
     },
     {
-        title: 'Frontend Developer',
-        company: 'Startup Inc',
-        companyUrl: '#',
+        title: 'Quant & Crypto Team Lead',
+        company: 'Faast-Fintech club',
+        companyUrl: 'https://www.amufaast.com/',
         location: 'Hybrid',
-        period: 'Jun 2023 - Dec 2023',
+        period: 'Sep 2025 - Present',
         description: [
-            'Built responsive user interfaces with modern React patterns',
-            'Integrated REST and GraphQL APIs for seamless data flow',
-            'Mentored junior developers and conducted code reviews',
+            'Designed and Developed the whole website for the Faast-Fintech club',
+            'Maintained the scalable website and updates, implemented backtesting, and researched quantitative algorithms',
         ],
-        technologies: ['React', 'Next.js', 'TailwindCSS', 'GraphQL'],
+        technologies: ['React', 'Next.js', 'TailwindCSS', 'MongoDB', 'Python'],
     },
     {
-        title: 'Intern - Full Stack Developer',
-        company: 'Digital Agency',
-        companyUrl: '#',
-        location: 'On-site',
-        period: 'Jan 2023 - May 2023',
+        title: 'Competitive Programming',
+        company: 'Codechef-club',
+        companyUrl: 'https://AMUcodechef.com',
+        location: 'hybrid',
+        period: 'sep 2024 - May 2025',
         description: [
-            'Contributed to client projects using MERN stack',
-            'Learned agile methodologies and best practices',
-            'Developed reusable component libraries',
+            'contributed in organising hackathons',
+            'participated in competitive programming challenges',
+            'collaborated with team members to improve code quality',
         ],
         technologies: ['MongoDB', 'Express', 'React', 'Node.js'],
     },
@@ -189,7 +188,7 @@ export const Experience = () => {
                     className="mt-12 text-center"
                 >
                     <motion.a
-                        href="#"
+                        href="https://drive.google.com/file/d/18gZiO1LUfox4CsaITDjFjzUVdv_eAziP/view?usp=sharing"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                         className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium border border-border rounded-full hover:bg-secondary transition-colors gradient-border"

@@ -135,7 +135,7 @@ const Index = () => {
                 I'd love to hear from you.
               </p>
               <motion.a
-                href="mailto:hello@example.com"
+                href="mailto:shubhvars2006@gmail.com"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="inline-flex px-8 py-4 text-sm font-medium bg-foreground text-background rounded-full hover:opacity-90 transition-opacity"

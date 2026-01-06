@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, ArrowUpRight } from 'lucide-react';
 
 const socialLinks = [
-  { icon: Github, href: 'https://github.com', label: 'GitHub' },
-  { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: Mail, href: 'mailto:hello@example.com', label: 'Email' },
+  { icon: Github, href: 'https://github.com/brainRottedCoder', label: 'GitHub' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/shubh-varshney-25b897314/', label: 'LinkedIn' },
+  { icon: Mail, href: 'mailto:shubhvars2006@gmail.com', label: 'Email' },
 ];
 
 export const Footer = () => {
@@ -22,11 +22,11 @@ export const Footer = () => {
               Let's connect
             </h3>
             <p className="text-muted-foreground text-sm max-w-sm leading-relaxed">
-              Open to interesting projects, collaborations, 
+              Open to interesting projects, collaborations,
               or just a good conversation about code.
             </p>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ export const Footer = () => {
             ))}
           </motion.div>
         </div>
-        
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -63,7 +63,7 @@ export const Footer = () => {
           className="mt-16 pt-8 border-t border-border/30 flex items-center justify-between"
         >
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Alex Chen
+            © {new Date().getFullYear()} Shubh Varshney
           </p>
           <p className="text-xs text-muted-foreground">
             Crafted with care

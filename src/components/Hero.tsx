@@ -30,7 +30,7 @@ export const Hero = () => {
               transition={{ duration: 0.6 }}
             >
               <p className="text-sm text-muted-foreground tracking-wide uppercase mb-4">
-                Software Engineer
+                Aspiring Software Engineer
               </p>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif leading-[1.1] text-foreground">
                 Shubh
