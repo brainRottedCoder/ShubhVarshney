@@ -4,11 +4,13 @@ import { githubRouter } from './routes/github.js';
 import { leetcodeRouter } from './routes/leetcode.js';
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(cors({
-    origin: ['*'],
+    origin: ['http://localhost:5173', 'http://localhost:4173', "http://localhost:8080", "https://shubh-varshney.vercel.app/",
+        ""
+    ],
     credentials: true
 }));
 app.use(express.json());
