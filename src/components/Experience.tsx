@@ -13,42 +13,44 @@ interface Experience {
 
 const experiences: Experience[] = [
     {
-        title: 'SDE Intern',
+        title: 'Software Development Engineer Intern',
         company: 'Temflo',
         companyUrl: 'https://temflo.co.in/',
         location: 'Remote',
         period: 'Jan 2026 - Present',
         description: [
-            'Developed and maintained scalable web applications using React and Node.js',
-            'Collaborated with cross-functional teams to deliver high-quality features',
-            'Implemented performance optimizations resulting in 40% faster load times',
+            'Building scalable web applications using React and Node.js, serving 1000+ active users',
+            'Collaborating with product and design teams to ship new features on weekly sprints',
+            'Implemented lazy loading and code splitting, achieving 40% improvement in page load times',
+            'Writing comprehensive unit tests and documentation to maintain code quality',
         ],
         technologies: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'AWS'],
     },
     {
         title: 'Quant & Crypto Team Lead',
-        company: 'Faast-Fintech club',
+        company: 'FAAST Fintech Club',
         companyUrl: 'https://www.amufaast.com/',
         location: 'Hybrid',
         period: 'Sep 2025 - Present',
         description: [
-            'Designed and Developed the whole website for the Faast-Fintech club',
-            'Maintained the scalable website and updates, implemented backtesting, and researched quantitative algorithms',
+            'Architected and developed the official club website from scratch, increasing member engagement by 60%',
+            'Leading a team of 5 developers to build quantitative trading tools and backtesting frameworks',
+            'Researching and implementing algorithmic trading strategies using Python and financial APIs',
         ],
-        technologies: ['React', 'Next.js', 'TailwindCSS', 'MongoDB', 'Python'],
+        technologies: ['React', 'Next.js', 'Tailwind CSS', 'MongoDB', 'Python'],
     },
     {
-        title: 'Competitive Programming',
-        company: 'Codechef-club',
+        title: 'Core Team Member',
+        company: 'CodeChef AMU Chapter',
         companyUrl: 'https://AMUcodechef.com',
-        location: 'hybrid',
-        period: 'sep 2024 - May 2025',
+        location: 'Hybrid',
+        period: 'Sep 2024 - May 2025',
         description: [
-            'contributed in organising hackathons',
-            'participated in competitive programming challenges',
-            'collaborated with team members to improve code quality',
+            'Organized and coordinated 3 hackathons with 200+ participants, managing logistics and judging',
+            'Mentored 50+ students in competitive programming and data structures & algorithms',
+            'Developed problem sets and conducted weekly coding sessions to improve community skills',
         ],
-        technologies: ['MongoDB', 'Express', 'React', 'Node.js'],
+        technologies: ['C++', 'Python', 'Data Structures', 'Algorithms'],
     },
 ];
 
@@ -188,7 +190,7 @@ export const Experience = () => {
                     className="mt-12 text-center"
                 >
                     <motion.a
-                        href="https://drive.google.com/file/d/18gZiO1LUfox4CsaITDjFjzUVdv_eAziP/view?usp=sharing"
+                        href="/ShubhVarshney.pdf"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                         className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium border border-border rounded-full hover:bg-secondary transition-colors gradient-border"

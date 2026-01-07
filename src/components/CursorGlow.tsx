@@ -11,10 +11,10 @@ export const CursorGlow = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [trail, setTrail] = useState<TrailPoint[]>([]);
   const [colorIndex, setColorIndex] = useState(0);
-  
+
   const cursorX = useMotionValue(0);
   const cursorY = useMotionValue(0);
-  
+
   const springConfig = { stiffness: 150, damping: 15, mass: 0.1 };
   const smoothX = useSpring(cursorX, springConfig);
   const smoothY = useSpring(cursorY, springConfig);
@@ -31,7 +31,7 @@ export const CursorGlow = () => {
     cursorX.set(e.clientX);
     cursorY.set(e.clientY);
     setIsVisible(true);
-    
+
     setTrail(prev => {
       const newPoint = { x: e.clientX, y: e.clientY, id: Date.now() };
       const updated = [newPoint, ...prev].slice(0, 10);
@@ -81,7 +81,7 @@ export const CursorGlow = () => {
         const size = Math.max(8, 40 - index * 4);
         const opacity = Math.max(0.05, 0.4 - index * 0.04);
         const blur = 8 + index * 2;
-        
+
         return (
           <motion.div
             key={point.id}
@@ -92,10 +92,10 @@ export const CursorGlow = () => {
             style={{
               left: point.x,
               top: point.y,
-              width: size,
-              height: size,
-              x: -size / 2,
-              y: -size / 2,
+              width: size / 2,
+              height: size / 2,
+              x: -size / 4,
+              y: -size / 4,
               background: `radial-gradient(circle, ${colors[(Math.floor(colorIndex) + index) % colors.length]} 0%, transparent 70%)`,
               filter: `blur(${blur}px)`,
             }}
@@ -110,10 +110,10 @@ export const CursorGlow = () => {
         style={{
           left: smoothX,
           top: smoothY,
-          width: 250,
-          height: 250,
-          x: -125,
-          y: -125,
+          width: 120,
+          height: 120,
+          x: -60,
+          y: -60,
           background: `radial-gradient(circle, ${currentColor} 0%, ${nextColor} 30%, transparent 70%)`,
           filter: 'blur(60px)',
           opacity: 0.35,
@@ -126,10 +126,10 @@ export const CursorGlow = () => {
         style={{
           left: smoothX,
           top: smoothY,
-          width: 80,
-          height: 80,
-          x: -40,
-          y: -40,
+          width: 50,
+          height: 50,
+          x: -25,
+          y: -25,
           background: `radial-gradient(circle, white 0%, ${currentColor} 40%, transparent 70%)`,
           filter: 'blur(20px)',
           opacity: 0.5,
@@ -142,10 +142,10 @@ export const CursorGlow = () => {
         style={{
           left: smoothX,
           top: smoothY,
-          width: 120,
-          height: 120,
-          x: -60,
-          y: -60,
+          width: 80,
+          height: 80,
+          x: -40,
+          y: -40,
           borderColor: currentColor,
           borderWidth: 1,
           filter: 'blur(2px)',

@@ -30,7 +30,7 @@ export const Hero = () => {
               transition={{ duration: 0.6 }}
             >
               <p className="text-sm text-muted-foreground tracking-wide uppercase mb-4">
-                Aspiring Software Engineer
+                Full-Stack Developer & Problem Solver
               </p>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif leading-[1.1] text-foreground">
                 Shubh
@@ -45,9 +45,9 @@ export const Hero = () => {
               transition={{ duration: 0.6, delay: 0.15 }}
               className="text-lg text-muted-foreground max-w-md leading-relaxed"
             >
-              Building clean, interactive web experiences.
-              Passionate about algorithms, system design,
-              and crafting elegant solutions.
+              Crafting high-performance web applications with modern technologies.
+              Passionate about AI integration, system architecture,
+              and building products that make a difference.
             </motion.p>
 
             <motion.div
@@ -88,12 +88,12 @@ export const Hero = () => {
               <div className="w-px h-8 bg-border" />
               <div>
                 <p className="text-3xl font-semibold font-mono text-foreground">10+</p>
-                <p className="text-xs text-muted-foreground">projects</p>
+                <p className="text-xs text-muted-foreground">projects shipped</p>
               </div>
               <div className="w-px h-8 bg-border" />
               <div>
                 <p className="text-3xl font-semibold font-mono text-foreground">500+</p>
-                <p className="text-xs text-muted-foreground">problems</p>
+                <p className="text-xs text-muted-foreground">DSA problems</p>
               </div>
             </motion.div>
           </div>

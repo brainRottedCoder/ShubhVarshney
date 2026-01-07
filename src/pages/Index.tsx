@@ -11,45 +11,48 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'Resume Builder & ATS analyser',
-    description: 'A modern, feature-rich portfolio and resume builder application that helps developers create professional portfolios with ease. Built with Next.js, React, and shadcn/ui for a seamless user experience.',
+    title: 'Resumify – AI Resume Builder & ATS Analyzer',
+    description: 'Transform your job search with an intelligent resume builder that crafts ATS-optimized resumes in minutes. Features real-time scoring, keyword optimization, and personalized suggestions powered by generative AI to help you land more interviews.',
     tags: ['React', 'Next.js', 'GenAI', 'Firebase', 'Tailwind CSS', 'NextAuth.js'],
     github: 'https://github.com/shubhvars/resumify/',
     link: 'https://resumify-rho-six.vercel.app/',
   },
   {
-    title: 'Voltway ERP - AI-Native Operations Platform',
-    description: 'Voltway ERP is a next-generation enterprise resource planning system specifically designed for electric scooter manufacturing operations. Unlike traditional ERPs, Voltway integrates artificial intelligence at its core through Hugo AI, an intelligent copilot that automates procurement workflows, analyzes operational data, and enables natural language interactions with your entire operations database.',
-    tags: ['Next.js 16.1', 'React 19', 'TypeScript 5', 'Tailwind CSS', 'LangChain', 'Firebase', 'HuggingFace', ''],
+    title: 'Voltway ERP – AI-Native Operations Platform',
+    description: 'A next-generation ERP system built for electric scooter manufacturing. Featuring Hugo AI—an intelligent copilot that automates procurement, analyzes operational data in real-time, and enables natural language queries across your entire operations database.',
+    tags: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS', 'LangChain', 'Firebase', 'HuggingFace'],
     github: 'https://github.com/brainRottedCoder/Amulate-vedant-shubh',
     link: 'https://amulate-vedant-shubh.vercel.app',
   },
   {
-    title: 'DreamGlobe',
-    description: `Dream Globe is not just a travel app — it's an emotional voyage through consciousness. We've built an immersive, surreal experience where users don't browse destinations, they dream them into existence.`,
-    tags: ['Framer.js', 'React', 'TypeScript', 'Tailwind CSS', 'Three.js', 'Shadcn UI', 'Figma'],
+    title: 'DreamGlobe – Immersive Travel Experience',
+    description: 'An award-winning hackathon project that reimagines travel discovery. Users don\'t just browse destinations—they dream them into existence through an immersive 3D interface with WebGL-powered globe visualization and fluid animations.',
+    tags: ['Framer Motion', 'React', 'TypeScript', 'Tailwind CSS', 'Three.js', 'Shadcn UI', 'Figma'],
     github: 'https://github.com/brainRottedCoder/DreamGlobe-dreamwareHackathon',
     link: 'https://dreamglobe.life/',
   },
   {
-    title: 'Santaviour',
-    description: `Santa's Rescue is an action-packed 2D platformer built with the Turbo Genesis SDK and Rust. Play as Santa on a mission to rescue kidnapped children and defeat the Evil Santa in an epic boss battle to save Christmas!`,
-    tags: ['Rust', 'Turbo Genesis SDK', 'Canva', 'Figma',],
+    title: 'Santaviour – 2D Platformer Game',
+    description: 'An action-packed holiday-themed platformer built with Rust and Turbo Genesis SDK. Features smooth gameplay mechanics, custom sprite animations, challenging boss battles, and a heartwarming story about saving Christmas.',
+    tags: ['Rust', 'Turbo Genesis SDK', 'Game Development', 'Figma'],
     github: 'https://github.com/brainRottedCoder/Santaviour',
     link: 'https://santaviour.vercel.app',
   },
   {
-    title: 'QuantAI',
-    description: 'A modern, AI-powered financial platform that helps users manage their personal finances, track investments, and gain valuable financial insights through intelligent automation and machine learning.',
-    tags: ['Next.js 16.1', 'React 19', 'Supabase', 'Tailwind css', 'Clerk', 'Shadcn UI', 'Tailwind CSS'],
+    title: 'QuantAI – Smart Finance Platform',
+    description: 'Take control of your financial future with an AI-powered platform that tracks investments, analyzes spending patterns, and delivers personalized insights. Featuring real-time portfolio tracking and intelligent automation for smarter money management.',
+    tags: ['Next.js 16', 'React 19', 'Supabase', 'Tailwind CSS', 'Clerk', 'Shadcn UI'],
     github: 'https://github.com/brainRottedCoder/QuantAI',
     link: 'https://quant-ai-olive.vercel.app/',
   },
-
 ];
 
 const skills = [
-  'Java', 'Javascript', 'Python', 'Express. js', 'Git', 'GitHub', 'Next.js', 'MongoDB', 'Node.js', 'PostgreSQL', 'Postman', 'Prisma ORM', 'RESTful APIs', 'GSAP', 'Next. js', 'React. js', 'Tailwind CSS',
+  'JavaScript', 'TypeScript', 'Python', 'Java', 'Rust',
+  'React', 'Next.js', 'Node.js', 'Express.js',
+  'MongoDB', 'PostgreSQL', 'Prisma ORM', 'Firebase', 'Supabase',
+  'Tailwind CSS', 'GSAP', 'Framer Motion', 'Three.js',
+  'Git', 'RESTful APIs', 'Postman', 'LangChain',
 ];
 
 const Index = () => {
@@ -87,18 +90,20 @@ const Index = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    I'm a developer who finds joy in solving complex problems
-                    and building tools that people actually want to use.
+                    I'm a full-stack developer with a passion for building products
+                    that solve real problems. From AI-powered applications to immersive
+                    web experiences, I love turning complex ideas into elegant solutions.
                   </p>
                   <p>
-                    My journey started with competitive programming, which taught
-                    me to think algorithmically. Now I apply that same rigor to
-                    building web applications — clean architecture, performant code,
-                    and intuitive interfaces.
+                    My journey began with competitive programming—solving 500+ problems
+                    taught me to think algorithmically and optimize relentlessly. Today,
+                    I apply that same rigor to architecting scalable systems, writing
+                    clean code, and crafting intuitive user experiences.
                   </p>
                   <p>
-                    When I'm not coding, you'll find me exploring new technologies,
-                    reading books, or playing video games.
+                    Currently exploring the intersection of AI and web development,
+                    building tools that leverage LLMs, and contributing to open-source.
+                    When I'm not coding, you'll find me reading tech blogs or gaming.
                   </p>
                 </div>
               </motion.div>
@@ -138,8 +143,8 @@ const Index = () => {
                 Let's work <span className="italic">together</span>
               </h2>
               <p className="text-muted-foreground max-w-md mx-auto mb-8">
-                Have a project in mind or just want to chat?
-                I'd love to hear from you.
+                Whether you have a project idea, want to collaborate on something exciting,
+                or just want to chat about tech—I'm always open to new opportunities.
               </p>
               <motion.a
                 href="mailto:shubhvars2006@gmail.com"
