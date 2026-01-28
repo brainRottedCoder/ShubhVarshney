@@ -87,8 +87,8 @@ export const Hero = () => {
               </div> */}
               <div className="w-px h-8 bg-border" />
               <div>
-                <p className="text-3xl font-semibold font-mono text-foreground">10+</p>
-                <p className="text-xs text-muted-foreground">projects shipped</p>
+                <p className="text-3xl font-semibold font-mono text-foreground">30+</p>
+                <p className="text-xs text-muted-foreground">projects built</p>
               </div>
               <div className="w-px h-8 bg-border" />
               <div>
