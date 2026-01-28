@@ -190,7 +190,7 @@ export const Experience = () => {
                     className="mt-12 text-center"
                 >
                     <motion.a
-                        href="/ShubhVarshney.pdf"
+                        href="/Resume.pdf"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                         className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium border border-border rounded-full hover:bg-secondary transition-colors gradient-border"
