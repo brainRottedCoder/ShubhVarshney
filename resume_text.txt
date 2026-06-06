@@ -1,0 +1,54 @@
+SHUBH VARSHNEY
+Aligarh • 7579323757 • shubhvars2006@gmail.com
+WORK EXPERIENCE
+Temflo private limited • Remote
+01/2026 - Present
+SDE Intern • Internship
+Code Development & Support,Learning & Skill Development,Bug Fixing & Debugging,Feature Assistance,Code Quality &
+Standards,Testing & Validation
+FAAST Club • Aligarh
+08/2025 - Present
+Quant & Crypto Team Lead • Part-time
+Involved in analysing the stock market and backtesting the stock to provide the stock details. Learning to automate the Market strategies .
+SKILLS
+Programming Languages: C+​+​, Java, Javascript, Python
+Backend, Database & Developer Tools:: Express.​js, Git, GitHub, Langchain, MongoDB, Node.​js, PostgreSQL, Postman, Prisma ​ORM,
+REST ​APIs, vector ​databases
+Frameworks & Libraries:: GSAP, Next.​js, React.​js, Tailwind ​CSS
+PROJECTS
+AI-Native ERP
+12/2025 - 01/2026
+• Engineered Hugo AI, a conversational AI agent using LangChain, LLM (120B parameters), and prompt engineering to process
+natural language queries, execute database CRUD operations, and automate supplier email workflows with 90% reduction in manual
+operations
+• Developed full-stack ERP application with Next.js 16, React 19, TypeScript, and Firebase Firestore featuring real-time data
+synchronization, custom React hooks, REST API design, and server-side validation handling 500+ inventory records.
+• Implemented document intelligence pipeline using pdf-parse for text extraction, integrated Nodemailer for automated email delivery,
+and built jsPDF export functionality—deployed on Vercel with CI/CD integration.
+PromptsAI
+01/2026 - 01/2026
+• Built a full-stack AI content platform using Next.js 14, TypeScript, Supabase (PostgreSQL), implementing RESTful APIs,
+OAuth/SSO authentication, and Row-Level Security for multi-tenant data isolation.
+• Developed multi-image upload pipeline with Cloudinary CDN, featuring drag-and-drop UI, parallel async uploads, and image
+carousel with lazy-loaded thumbnails for optimized performance.
+• Designed PostgreSQL schema with full-text search (tsvector), cursor-based pagination, and denormalized counters for O(1) reads—
+powering personalized "Trending" and "Following" feeds.
+Resume Builder
+08/2025 - 08/2025
+• A modern, feature-rich portfolio and resume builder application that helps developers create professional portfolios with ease. Built with
+Next.js, React, and shadcn/ui for a seamless user experience.
+• Create and customize professional resumes with multiple templates, GitHub Integration: Import your GitHub projects and contributions.
+• ATS Score Checker: Get your resume's ATS compatibility score and improvement suggestions.
+AWARDS & SCHOLARSHIPS
+2 x Community prize Winner - $500
+09/2025
+Raptors Hackathon
+Python Coding contest -Rs.2.5k
+01/2025
+EDIC Foundation
+EDUCATION
+B.Tech
+Aligarh Muslim University • GPA: 8 CPI till 2nd semester
+08/2024 - Present
+
+---PAGE---

@@ -45,6 +45,13 @@ const projects = [
     github: 'https://github.com/brainRottedCoder/QuantAI',
     link: 'https://quant-ai-olive.vercel.app/',
   },
+  {
+    title: "Azmuth AI-comapanion",
+    description:"Azmuth is a full-stack, production-grade learning ecosystem that transforms how developers learn technology — moving from passive reading to active, real-time simulation. Instead of memorizing concepts, developers experience them live: dragging infrastructure components onto a canvas, watching traffic flow through architectures, and getting instant AI feedback on their designs.",
+    tags:['Next.js','Kubertenes',' Docker' ,'NextAuth',],
+    github:"https://github.com/brainRottedCoder/devteacher",
+    link:"https://azmuth-eight.vercel.app/",
+  }
 ];
 
 const skills = [
