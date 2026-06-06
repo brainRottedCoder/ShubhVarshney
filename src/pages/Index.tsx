@@ -54,7 +54,7 @@ const projects = [
   },
   {
     title:"project-health",
-    description:"Pproject-healthy (ph) is an advanced, all-in-one CLI binary and IDE extension designed to run deep, automated analyses on any software repository. It combines eight parallel analysis modules and an AI intelligence layer powered by MegaLLM to provide actionable insights, unified health scores, and conversational code interaction.",
+    description:"Project-healthy (ph) is an advanced, all-in-one CLI binary and IDE extension designed to run deep with 1000+ downloads, automated analyses on any software repository. It combines eight parallel analysis modules and an AI intelligence layer powered by MegaLLM to provide actionable insights, unified health scores, and conversational code interaction.",
     tags:['CLI','IDE extension','CI/CD','PR complexity','javascript'],
     github:"https://github.com/sanjay-singhyml/project-healthy",
     link:"https://frontent-projecthealth.vercel.app/",
